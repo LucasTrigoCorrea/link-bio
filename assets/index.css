@@ -1,0 +1,98 @@
+/* Importação Global */
+@import './global.css';
+/* Importação Fonts */
+@font-face {
+    font-family: 'mark-pro-bold.woff';
+    src: url('/files/fonts/mark-pro-bold.woff');
+}
+
+@font-face {
+    font-family: 'mark-pro-regular.woff';
+    src: url('/files/fonts/mark-pro-regular.woff');
+}
+
+/* Código */
+:root {
+    --regular: 'mark-pro-regular.woff';
+    --bold: 'mark-pro-bold.woff';
+    --cor-rosa:#c38370;
+    --cor-rosa-claro: #e4b7a0;
+    --cor-branco-gelo: #f6eee0;
+}
+
+section.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--cor-branco-gelo);
+    background: linear-gradient(to bottom, var(--cor-branco-gelo), var(--cor-rosa-claro));
+}
+
+section.bio .foto img {
+    width: 100%;
+    max-width: 200px;
+    border: solid 10px var(--cor-rosa);
+    border-radius: 50%;
+    box-shadow: 10px -10px 30px 0 var(--cor-rosa);
+    margin-top: 20px;
+}
+
+section.bio .links {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+section.bio .links a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 10px 0 10px 0 ;
+    border-radius: 10px;
+    text-decoration: none;
+    border: solid 2px #f6eee032;
+}
+
+section.bio .links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+}
+
+section.bio .links a .bolinha {
+    background-color: var(--cor-rosa);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 10px -10px 30px 0 var(--cor-branco-gelo);
+
+}
+
+section.bio .links a:hover .bolinha {
+    background-color: white;
+    transition: all 0.5s;
+}
+
+section.bio .links a .texto{
+    margin: 0 0 0 20px;
+    
+}
+
+section.bio .links a .texto h3{
+    font-family:var(--bold);
+    font-size: 1.8rem;
+    color: var(--cor-rosa);
+    margin: 0 0 5px 0;
+    
+}
+
+section.bio .links a .texto p{
+    font-family:var(--regular);
+    font-size: 1.5rem;
+    color: white;
+    
+}
